@@ -5,12 +5,10 @@ export const TaskCardTitle = () => {
   const [inputCardTitle, setInputCardTitle] = useState("Today");
   const handleClick = () => {
     setIsClick(true);
-    console.log(isClick);
   };
 
   const handleChange = (e) => {
     setInputCardTitle(e.target.value);
-    console.log(inputCardTitle);
   };
 
   const handleSubmit = (e) => {
