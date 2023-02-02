@@ -7,7 +7,11 @@
 ```
 npm install 
 ```
+```
+npm run build
+```
+```
+npm run start
+```
 
-```
-yarn start
-```
+yarnでも大丈夫です。
