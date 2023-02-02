@@ -1,14 +1,17 @@
 import React from "react";
+import { v4 as uuid } from "uuid";
 
 const TaskAddinput = ({ inputText, setInputText, setTaskList, taskList }) => {
   const handleSubmit = (e) => {
+    const taskId = uuid();
     e.preventDefault();
     if (inputText == "") return;
     // Cardを追加する
     setTaskList([
       ...taskList,
       {
-        id: taskList.length,
+        id: taskId,
+        draggableId: `task-${taskId}`,
         text: inputText,
       },
     ]);
