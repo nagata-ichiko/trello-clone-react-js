@@ -3,7 +3,7 @@ import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import { AddTaskCardButton } from "./button/AddTaskCardButton";
 import { TaskCard } from "./TaskCard";
 
-const TaskCards = () => {
+export const TaskCards = () => {
   const [taskCardsList, setTaskCardsList] = useState([
     {
       id: "0",
@@ -19,7 +19,6 @@ const TaskCards = () => {
 
   const handleDragEnd = (result) => {
     reorder(taskCardsList, result.source.index, result.destination.index);
-
     setTaskCardsList(taskCardsList);
   };
 
@@ -52,5 +51,3 @@ const TaskCards = () => {
     </DragDropContext>
   );
 };
-
-export default TaskCards;
