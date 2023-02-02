@@ -5,5 +5,10 @@
 # 実行手順
 
 ```
+npm install 
 
+```
+
+```
+yarn start
 ```
